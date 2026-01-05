@@ -11,7 +11,9 @@ import {
   IconDeviceDesktop,
   IconSpeakerphone,
   IconLayoutBottombar,
-  IconPremiumRights
+  IconPremiumRights,
+  IconLoader2,
+  IconLoader3
 } from '@tabler/icons-react';
 
 // Type definitions for components
@@ -340,6 +342,136 @@ export const applicationComponents: ComponentType[] = [
   <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 text-sm font-medium ring-2 ring-white dark:ring-gray-800">+5</div>
 </div>`,
       },
+    ],
+  },
+  {
+    slug: 'progress',
+    name: 'Progress',
+    icon: <IconLoader2 stroke={1.5} />,
+    description: 'Progress bar components to show task completion status',
+    variants: [
+      {
+        id: 'progress-basic',
+        name: 'Basic Progress',
+        code: `<div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+  <div class="bg-lime-600 h-2.5 rounded-full" style="width: 45%"></div>
+</div>`,
+      },
+      {
+        id: 'progress-label',
+        name: 'Progress with Label',
+        code: `<div class="w-full">
+  <div class="mb-1 flex justify-between">
+    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Working on it...</span>
+    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">70%</span>
+  </div>
+  <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700 overflow-hidden">
+    <div class="bg-lime-600 h-4 rounded-full text-[10px] font-bold text-white flex items-center justify-center transition-all duration-500" style="width: 70%">70%</div>
+  </div>
+</div>`,
+      },
+      {
+        id: 'progress-animated',
+        name: 'Animated Progress',
+        code: `<div class="w-full bg-gray-200 rounded-full h-3 dark:bg-gray-700 overflow-hidden">
+  <div class="bg-lime-600 h-full rounded-full relative overflow-hidden" style="width: 60%">
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-[shimmer_2s_infinite]"></div>
+  </div>
+</div>`,
+      },
+      {
+        id: 'progress-gradient',
+        name: 'Gradient Progress',
+        code: `<div class="w-full bg-gray-200 rounded-full h-3 dark:bg-gray-700 overflow-hidden">
+  <div class="bg-gradient-to-r from-lime-500 via-green-500 to-emerald-500 h-full rounded-full" style="width: 85%"></div>
+</div>`,
+      },
+      {
+        id: 'progress-sizes',
+        name: 'Progress Sizes',
+        code: `<div class="w-full space-y-4">
+  <div class="w-full bg-gray-200 rounded-full h-1 dark:bg-gray-700">
+    <div class="bg-lime-600 h-1 rounded-full" style="width: 30%"></div>
+  </div>
+  <div class="w-full bg-gray-200 rounded-full h-3 dark:bg-gray-700">
+    <div class="bg-lime-600 h-3 rounded-full" style="width: 50%"></div>
+  </div>
+  <div class="w-full bg-gray-200 rounded-full h-6 dark:bg-gray-700">
+    <div class="bg-lime-600 h-6 rounded-full" style="width: 70%"></div>
+  </div>
+</div>`,
+      }
+    ],
+  },
+  {
+    slug: 'skeleton',
+    name: 'Skeleton',
+    icon: <IconLoader3 stroke={1.5} />,
+    description: 'Ghostly loading placeholders for content',
+    variants: [
+      {
+        id: 'skeleton-basic',
+        name: 'Basic Shapes',
+        code: `<div class="flex flex-col gap-4 w-full max-w-sm">
+  <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-48 animate-pulse"></div>
+  <div class="h-10 bg-gray-200 dark:bg-gray-700 rounded-lg w-full animate-pulse"></div>
+  <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-full animate-pulse"></div>
+</div>`,
+      },
+      {
+        id: 'skeleton-avatar',
+        name: 'Profile Skeleton',
+        code: `<div class="flex items-center gap-4 w-full max-w-sm">
+  <div class="w-12 h-12 bg-gray-200 dark:bg-gray-700 rounded-full animate-pulse shrink-0"></div>
+  <div class="flex-1 space-y-2">
+    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-3/4 animate-pulse"></div>
+    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full w-1/2 animate-pulse"></div>
+  </div>
+</div>`,
+      },
+      {
+        id: 'skeleton-card',
+        name: 'Card Skeleton',
+        code: `<div class="w-full max-w-sm glass-card p-6 space-y-4">
+  <div class="w-full aspect-video bg-gray-200 dark:bg-gray-700 rounded-xl animate-pulse"></div>
+  <div class="space-y-2">
+    <div class="h-5 bg-gray-200 dark:bg-gray-700 rounded-full w-4/5 animate-pulse"></div>
+    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-full animate-pulse"></div>
+    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-2/3 animate-pulse"></div>
+  </div>
+  <div class="pt-4 flex justify-between">
+    <div class="h-9 bg-gray-200 dark:bg-gray-700 rounded-lg w-24 animate-pulse"></div>
+    <div class="h-9 bg-gray-200 dark:bg-gray-700 rounded-lg w-24 animate-pulse"></div>
+  </div>
+</div>`,
+      },
+      {
+        id: 'skeleton-list',
+        name: 'List Skeleton',
+        code: `<div class="w-full max-w-sm space-y-6">
+  <div class="flex items-start gap-3">
+    <div class="w-4 h-4 bg-gray-200 dark:bg-gray-700 rounded-sm mt-1 animate-pulse"></div>
+    <div class="flex-1 space-y-2">
+      <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-full animate-pulse"></div>
+      <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full w-4/5 animate-pulse"></div>
+    </div>
+  </div>
+  <div class="flex items-start gap-3">
+    <div class="w-4 h-4 bg-gray-200 dark:bg-gray-700 rounded-sm mt-1 animate-pulse"></div>
+    <div class="flex-1 space-y-2">
+      <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-full animate-pulse"></div>
+      <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full w-4/5 animate-pulse"></div>
+    </div>
+  </div>
+  <div class="flex items-start gap-3">
+    <div class="w-4 h-4 bg-gray-200 dark:bg-gray-700 rounded-sm mt-1 animate-pulse"></div>
+    <div class="flex-1 space-y-2">
+      <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-full animate-pulse"></div>
+      <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full w-4/5 animate-pulse"></div>
+    </div>
+  </div>
+</div>`,
+      }
     ],
   },
 ];

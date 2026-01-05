@@ -20,7 +20,7 @@
   --muted-foreground: #64748b;
   --border: #e2e8f0;
   --ring: #65a30d;
-  
+
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(255, 255, 255, 0.3);
@@ -43,7 +43,7 @@
   --muted-foreground: #94a3b8;
   --border: #334155;
   --ring: #a3e635;
-  
+
   /* Glassmorphism Dark */
   --glass-bg: rgba(30, 41, 59, 0.8);
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -116,7 +116,7 @@ body {
 }
 
 .gradient-mesh {
-  background: 
+  background:
     radial-gradient(at 40% 20%, rgba(101, 163, 13, 0.3) 0px, transparent 50%),
     radial-gradient(at 80% 0%, rgba(132, 204, 22, 0.3) 0px, transparent 50%),
     radial-gradient(at 0% 50%, rgba(101, 163, 13, 0.2) 0px, transparent 50%),
@@ -125,7 +125,7 @@ body {
 }
 
 .dark .gradient-mesh {
-  background: 
+  background:
     radial-gradient(at 40% 20%, rgba(101, 163, 13, 0.15) 0px, transparent 50%),
     radial-gradient(at 80% 0%, rgba(132, 204, 22, 0.15) 0px, transparent 50%),
     radial-gradient(at 0% 50%, rgba(101, 163, 13, 0.1) 0px, transparent 50%),
@@ -135,13 +135,37 @@ body {
 
 /* Animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(163, 230, 53, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(163, 230, 53, 0.5); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(163, 230, 53, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(163, 230, 53, 0.5);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .animate-float {
@@ -210,11 +234,25 @@ body {
 }
 
 /* Responsive Preview Sizes */
-.preview-mobile { max-width: 320px; }
-.preview-sm { max-width: 640px; }
-.preview-md { max-width: 768px; }
-.preview-lg { max-width: 1024px; }
-.preview-full { max-width: 100%; }
+.preview-mobile {
+  max-width: 320px;
+}
+
+.preview-sm {
+  max-width: 640px;
+}
+
+.preview-md {
+  max-width: 768px;
+}
+
+.preview-lg {
+  max-width: 1024px;
+}
+
+.preview-full {
+  max-width: 100%;
+}
 
 /* Selection */
 ::selection {

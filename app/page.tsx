@@ -18,7 +18,9 @@ import {
   IconDownload,
   IconSettings,
   IconStar,
-  IconFlower
+  IconFlower,
+  IconLoader2,
+  IconLoader3
 } from '@tabler/icons-react';
 
 export default function Home() {
@@ -171,6 +173,20 @@ export default function Home() {
                   icon={<IconUserCircle stroke={1.5} />}
                   href="/components/application/avatars"
                   description="User profile displays"
+                />
+                <ComponentCard
+                  title="Progress"
+                  count={5}
+                  icon={<IconLoader2 stroke={1.5} />}
+                  href="/components/application/progress"
+                  description="Task completion indicators"
+                />
+                <ComponentCard
+                  title="Skeleton"
+                  count={4}
+                  icon={<IconLoader3 stroke={1.5} />}
+                  href="/components/application/skeleton"
+                  description="Ghostly loading placeholders"
                 />
               </div>
             </div>
