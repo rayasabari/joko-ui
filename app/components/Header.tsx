@@ -44,7 +44,7 @@ export default function Header() {
             {/* Search */}
             <button
               onClick={() => setIsDialogOpen(true)}
-              className="hidden sm:block relative w-64 px-4 py-2 pl-10 rounded-xl glass-button text-sm hover:ring-2 hover:ring-primary/50 transition-all text-left text-muted-foreground"
+              className="hidden sm:block relative w-64 px-4 py-2 pl-10 rounded-xl glass-button text-sm hover:ring-primary/50 transition-all text-left text-muted-foreground"
             >
               Search components...
               <svg
