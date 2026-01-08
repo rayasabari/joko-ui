@@ -1092,7 +1092,8 @@ export const marketingComponents: ComponentType[] = [
 </section>`,
       },
     ],
-  }
+  },
+  {
     slug: 'faq',
     name: 'FAQ',
     icon: <IconLineHeight stroke={1.5} />,
