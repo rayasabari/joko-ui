@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { IconSearch, IconX} from '@tabler/icons-react';
-import { applicationComponents, marketingComponents } from '@/lib/components-data';
+import { IconSearch, IconX } from '@tabler/icons-react';
+import { applicationComponents, marketingComponents } from '@/lib/data/components';
 import ComponentCard from './ComponentCard';
 
 interface ComponentDialogProps {
@@ -37,12 +37,12 @@ export default function ComponentDialog({ isOpen, onClose }: ComponentDialogProp
         onClose();
       }
     };
-    
+
     if (isOpen) {
       document.addEventListener('keydown', handleEscape);
       document.body.style.overflow = 'hidden';
     }
-    
+
     return () => {
       document.removeEventListener('keydown', handleEscape);
       document.body.style.overflow = 'unset';
@@ -54,17 +54,17 @@ export default function ComponentDialog({ isOpen, onClose }: ComponentDialogProp
   const dialogContent = (
     <>
       {/* Blur Overlay */}
-      <div 
+      <div
         className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998] transition-opacity duration-300"
         onClick={onClose}
         aria-hidden="true"
       />
 
       {/* Dialog */}
-      <div 
+      <div
         className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
       >
-        <div 
+        <div
           className="bg-white dark:bg-gray-800 w-full max-w-4xl max-h-[85vh] flex flex-col overflow-hidden rounded-xl shadow-lg animate-in fade-in zoom-in-95 duration-300"
           onClick={(e) => e.stopPropagation()}
         >
@@ -81,12 +81,12 @@ export default function ComponentDialog({ isOpen, onClose }: ComponentDialogProp
                 <IconX size={24} className="text-muted-foreground" />
               </button>
             </div>
-            
+
             {/* Search Bar */}
             <div className="relative">
-              <IconSearch 
-                size={20} 
-                className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" 
+              <IconSearch
+                size={20}
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
               />
               <input
                 type="text"

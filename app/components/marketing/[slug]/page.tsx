@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getComponentBySlug, marketingComponents } from "@/lib/components-data";
+import { getComponentBySlug, marketingComponents } from "@/lib/data/components";
 import ComponentPreview from "@/app/components/ComponentPreview";
 
 

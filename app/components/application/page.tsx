@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ComponentCard from "@/app/components/ComponentCard";
-import { applicationComponents } from "@/lib/components-data";
+import { applicationComponents } from "@/lib/data/components";
 import { IconLayoutGrid } from "@tabler/icons-react";
 
 export const metadata = {

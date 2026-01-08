@@ -1,28 +1,12 @@
 import Link from "next/link";
 import ComponentCard from "./components/ComponentCard";
-import { getTotalComponentCount } from "@/lib/components-data";
+import { getTotalComponentCount, getAllComponents } from "@/lib/data/components";
 import {
-  IconLayoutGrid,
-  IconToggleRight,
-  IconCards,
-  IconBell,
-  IconForms,
-  IconTag,
-  IconUserCircle,
-  IconChartLine,
-  IconDeviceDesktop,
-  IconSpeakerphone,
-  IconLayoutBottombar,
-  IconPremiumRights,
   IconWand,
   IconDownload,
   IconSettings,
   IconStar,
-  IconMessageCircle2,
-  IconFlower,
-  IconLoader2,
-  IconLoader3,
-  IconLineHeight
+  IconFlower
 } from '@tabler/icons-react';
 
 export default function Home() {
@@ -128,121 +112,25 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Application Components */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
-                <span className="text-2xl"><IconLayoutGrid stroke={1.5} /></span> Application Components
-              </h3>
-              <div className="grid gap-4">
-                <ComponentCard
-                  title="Buttons"
-                  count={10}
-                  icon={<IconToggleRight stroke={1.5} />}
-                  href="/components/application/buttons"
-                  description="Various button styles and states"
-                />
-                <ComponentCard
-                  title="Cards"
-                  count={4}
-                  icon={<IconCards stroke={1.5} />}
-                  href="/components/application/cards"
-                  description="Versatile card layouts"
-                />
-                <ComponentCard
-                  title="Alerts"
-                  count={4}
-                  icon={<IconBell stroke={1.5} />}
-                  href="/components/application/alerts"
-                  description="Notification and feedback"
-                />
-                <ComponentCard
-                  title="Forms"
-                  count={4}
-                  icon={<IconForms stroke={1.5} />}
-                  href="/components/application/forms"
-                  description="Input components"
-                />
-                <ComponentCard
-                  title="Badges"
-                  count={4}
-                  icon={<IconTag stroke={1.5} />}
-                  href="/components/application/badges"
-                  description="Labels and status indicators"
-                />
-                <ComponentCard
-                  title="Avatars"
-                  count={3}
-                  icon={<IconUserCircle stroke={1.5} />}
-                  href="/components/application/avatars"
-                  description="User profile displays"
-                />
-                <ComponentCard
-                  title="Progress"
-                  count={5}
-                  icon={<IconLoader2 stroke={1.5} />}
-                  href="/components/application/progress"
-                  description="Task completion indicators"
-                />
-                <ComponentCard
-                  title="Skeleton"
-                  count={4}
-                  icon={<IconLoader3 stroke={1.5} />}
-                  href="/components/application/skeleton"
-                  description="Ghostly loading placeholders"
-                />
+            {getAllComponents().map((category) => (
+              <div key={category.slug} className="space-y-4">
+                <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
+                  <span className="text-2xl">{category.icon}</span> {category.name} Components
+                </h3>
+                <div className="grid gap-4">
+                  {category.components.map((component) => (
+                    <ComponentCard
+                      key={component.slug}
+                      title={component.name}
+                      count={component.variants.length}
+                      icon={component.icon}
+                      href={`/components/${category.slug}/${component.slug}`}
+                      description={component.description}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
-
-            {/* Marketing Components */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
-                <span className="text-2xl"><IconChartLine stroke={1.5} /></span> Marketing Components
-              </h3>
-              <div className="grid gap-4">
-                <ComponentCard
-                  title="Hero Sections"
-                  count={3}
-                  icon={<IconDeviceDesktop stroke={1.5} />}
-                  href="/components/marketing/heroes"
-                  description="Eye-catching landing sections"
-                />
-                <ComponentCard
-                  title="CTAs"
-                  count={3}
-                  icon={<IconSpeakerphone stroke={1.5} />}
-                  href="/components/marketing/ctas"
-                  description="Call-to-action sections"
-                />
-                <ComponentCard
-                  title="Footers"
-                  count={3}
-                  icon={<IconLayoutBottombar stroke={1.5} />}
-                  href="/components/marketing/footers"
-                  description="Website footer designs"
-                />
-                <ComponentCard
-                  title="Pricing"
-                  count={2}
-                  icon={<IconPremiumRights stroke={1.5} />}
-                  href="/components/marketing/pricing"
-                  description="Pricing tables and cards"
-                />
-                <ComponentCard
-                  title="Testimonials"
-                  count={3}
-                  icon={<IconMessageCircle2 stroke={1.5} />}
-                  href="/components/marketing/testimonials"
-                  description="Customer feedback sections"
-                />
-                <ComponentCard
-                  title="FAQ"
-                  count={2}
-                  icon={<IconLineHeight stroke={1.5} />}
-                  href="/components/marketing/faq"
-                  description="FAQs for showing additional information."
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

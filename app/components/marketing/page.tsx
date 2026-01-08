@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ComponentCard from "@/app/components/ComponentCard";
-import { marketingComponents } from "@/lib/components-data";
+import { marketingComponents } from "@/lib/data/components";
 import { IconChartLine } from "@tabler/icons-react";
 
 export const metadata = {

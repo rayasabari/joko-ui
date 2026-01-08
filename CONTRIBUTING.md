@@ -57,6 +57,9 @@ git checkout -b feature/improve-button-style
 - Run the project locally
 - Make sure the build passes without errors
 
+> [!NOTE] 
+> If your changes are adding new components, variants, or categories, please read [Adding Components Guide](ADDING_COMPONENTS.md).
+
 ---
 
 ### 4️⃣ Commit Message Convention (REQUIRED)
