@@ -1,15 +1,15 @@
-import { IconTable } from '@tabler/icons-react';
-import { ComponentType } from '../types';
+import { IconTable } from "@tabler/icons-react";
+import { ComponentType } from "../types";
 
 export const table: ComponentType = {
-  slug: 'table',
-  name: 'Table',
+  slug: "table",
+  name: "Table",
   icon: <IconTable stroke={1.5} />,
-  description: 'Table component for efficiently displaying large datasets.',
+  description: "Table component for efficiently displaying large datasets.",
   variants: [
     {
-      id: 'table-basic',
-      name: 'Basic',
+      id: "table-basic",
+      name: "Basic",
       code: `<div class="overflow-x-auto rounded-lg border border-lime-200 bg-white shadow-sm dark:border-lime-900/40 dark:bg-slate-900">
   <table class="min-w-full text-xs sm:text-sm">
     <!-- Head -->
@@ -80,11 +80,11 @@ export const table: ComponentType = {
     </tbody>
   </table>
 </div>`,
-      contributor: 'yuxxeun',
+      contributor: "yuxxeun",
     },
-     {
-      id: 'table-with-avatar',
-      name: 'With Avatar',
+    {
+      id: "table-with-avatar",
+      name: "With Avatar",
       code: `<div class="overflow-x-auto rounded-lg border border-lime-200 bg-white shadow-sm dark:border-lime-900/40 dark:bg-slate-900">
   <table class="min-w-full text-xs sm:text-sm">
     <thead class="bg-lime-50 text-lime-900 dark:bg-slate-800 dark:text-lime-200">
@@ -195,7 +195,7 @@ export const table: ComponentType = {
     </tbody>
   </table>
 </div>`,
-      contributor: 'yuxxeun',
+      contributor: "yuxxeun",
     },
   ],
 };
