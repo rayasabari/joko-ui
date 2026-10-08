@@ -27,6 +27,7 @@ import { accordions } from './accordions';
 import { paginations } from './paginations';
 import { dropdowns } from './dropdowns';
 import { carousels } from './carousels';
+import { tours } from './tours';
 
 export const applicationComponents: ComponentType[] = [
   navbars,
@@ -56,5 +57,6 @@ export const applicationComponents: ComponentType[] = [
   datePicker,
   accordions,
   paginations,
-  carousels
+  carousels,
+  tours
 ];
