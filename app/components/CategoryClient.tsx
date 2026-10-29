@@ -1,9 +1,7 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import ComponentCard from './ComponentCard';
-import Pagination from './Pagination';
-import { ComponentType } from '@/lib/data/components/types';
+import ComponentCard from "./ComponentCard";
+import { ComponentType } from "@/lib/data/components/types";
 
 interface CategoryClientProps {
   components: ComponentType[];
@@ -11,16 +9,16 @@ interface CategoryClientProps {
   itemsPerPage?: number;
 }
 
-export default function CategoryClient({ 
-  components, 
-  category, 
-  itemsPerPage = 9 
+export default function CategoryClient({
+  components,
+  category,
+  // itemsPerPage = 9,
 }: CategoryClientProps) {
-  const [currentPage, setCurrentPage] = useState(1);
-  
-  const totalPages = Math.ceil(components.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
+  // const [currentPage, setCurrentPage] = useState(1);
+
+  // const totalPages = Math.ceil(components.length / itemsPerPage);
+  // const startIndex = (currentPage - 1) * itemsPerPage;
+  // const endIndex = startIndex + itemsPerPage;
   // NOTE: Pagination is temporarily disabled to show all components
   const currentComponents = components;
 

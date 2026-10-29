@@ -1,24 +1,23 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import ComponentPreview from './ComponentPreview';
-import Pagination from './Pagination';
-import { ComponentVariant } from '@/lib/data/components/types';
+import { useState } from "react";
+import ComponentPreview from "./ComponentPreview";
+import { ComponentVariant } from "@/lib/data/components/types";
 
 interface ComponentDetailClientProps {
   variants: ComponentVariant[];
   itemsPerPage?: number;
 }
 
-export default function ComponentDetailClient({ 
-  variants, 
-  itemsPerPage = 6 
+export default function ComponentDetailClient({
+  variants,
+  itemsPerPage = 6,
 }: ComponentDetailClientProps) {
-  const [currentPage, setCurrentPage] = useState(1);
-  
-  const totalPages = Math.ceil(variants.length / itemsPerPage);
+  const [currentPage] = useState(1);
+
+  // const totalPages = Math.ceil(variants.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
+  // const endIndex = startIndex + itemsPerPage;
   // NOTE: Pagination is temporarily disabled to show all variants
   const currentVariants = variants;
 
