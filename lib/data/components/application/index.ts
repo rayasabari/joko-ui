@@ -29,6 +29,7 @@ import { dropdowns } from "./dropdowns";
 import { carousels } from "./carousels";
 import { command_palette } from "./command-palette";
 import { notification } from "./notification";
+import { tours } from './tours';
 
 export const applicationComponents: ComponentType[] = [
   navbars,
@@ -61,4 +62,5 @@ export const applicationComponents: ComponentType[] = [
   carousels,
   command_palette,
   notification,
+  tours
 ];

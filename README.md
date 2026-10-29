@@ -76,6 +76,7 @@ UI components for building functional web applications:
 - [x] Toasts
 - [x] Toggles
 - [x] Tooltips
+- [x] Tours
 
 ### [📣 Marketing](/components/marketing)
 Components for building high-converting landing pages:
