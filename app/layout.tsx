@@ -59,6 +59,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        {/* Fix hydration mismatch caused by browser extensions (e.g. Bitdefender, Urban VPN) injecting bis_skin_checked */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){function c(){document.querySelectorAll('[bis_skin_checked]').forEach(function(e){e.removeAttribute('bis_skin_checked');});}c();var o=new MutationObserver(c);o.observe(document.documentElement,{attributes:true,subtree:true,attributeFilter:['bis_skin_checked']});window.addEventListener('load',function(){setTimeout(function(){o.disconnect();},3000);});})();`,
+          }}
+        />
+      </head>
       <body className={`${poppins.variable} font-sans antialiased`} suppressHydrationWarning>
         {/* Inject JSON-LD Script */}
         <script
