@@ -71,6 +71,7 @@ UI components for building functional web applications:
 - [x] Selects
 - [x] Sidebars
 - [x] Skeletons
+- [x] Sliders
 - [x] Tables
 - [x] Tabs
 - [x] Timelines
@@ -106,7 +107,6 @@ We are actively developing new components. Here is our prioritized list of upcom
 
 ### 📱 Application UI
 - [ ] Textareas
-- [ ] Sliders (input)
 - [ ] File Uploads
 - [ ] Dividers
 - [ ] Containers

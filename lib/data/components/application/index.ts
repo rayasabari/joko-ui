@@ -31,6 +31,7 @@ import { command_palette } from "./command-palette";
 import { notification } from "./notification";
 import { tours } from './tours';
 import { timelines } from './timelines';
+import { sliders } from './sliders';
 
 export const applicationComponents: ComponentType[] = [
   navbars,
@@ -64,5 +65,6 @@ export const applicationComponents: ComponentType[] = [
   command_palette,
   notification,
   tours,
-  timelines
+  timelines,
+  sliders
 ];
