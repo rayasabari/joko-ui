@@ -39,10 +39,10 @@ import { dividers } from './dividers';
 export const applicationComponents: ComponentType[] = [
   navbars,
   sidebars,
-  dropdowns,
-  breadcrumbs,
-  avatars,
   forms,
+  breadcrumbs,
+  dropdowns,
+  avatars,
   buttons,
   cards,
   loaders,
