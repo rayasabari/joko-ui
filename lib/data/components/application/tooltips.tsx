@@ -1,9 +1,8 @@
-import { IconInfoCircle } from '@tabler/icons-react';
-import { ComponentType } from '../types';
+import { ComponentType } from "../types";
 
 export const tooltips: ComponentType = {
-  slug: 'tooltips',
-  name: 'Tooltips',
+  slug: "tooltips",
+  name: "Tooltips",
   icon: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,11 +19,12 @@ export const tooltips: ComponentType = {
       <path d="M12 5l7 7-7 7" />
     </svg>
   ),
-  description: 'Sleek, animated tooltips to provide additional context on hover.',
+  description:
+    "Sleek, animated tooltips to provide additional context on hover.",
   variants: [
     {
-      id: 'tooltip-premium',
-      name: 'Premium Dark Tooltip',
+      id: "tooltip-premium",
+      name: "Premium Dark Tooltip",
       code: `<div class="flex items-center justify-center py-10">
   <div class="group relative inline-block">
     <button class="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-6 py-3 text-sm font-semibold text-white shadow-xl transition-all hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
@@ -46,11 +46,11 @@ export const tooltips: ComponentType = {
     </div>
   </div>
 </div>`,
-      contributor: 'faishalmhmd',
+      contributor: "faishalmhmd",
     },
     {
-      id: 'tooltip-colored',
-      name: 'Lime Accent Tooltip',
+      id: "tooltip-colored",
+      name: "Lime Accent Tooltip",
       code: `<div class="flex items-center justify-center py-10">
   <div class="group relative inline-block">
     <button class="inline-flex items-center gap-2 rounded-xl border-2 border-lime-500 bg-transparent px-6 py-3 text-sm font-bold text-lime-600 transition-all hover:bg-lime-50 dark:text-lime-400 dark:hover:bg-lime-900/20">
@@ -69,7 +69,7 @@ export const tooltips: ComponentType = {
     </div>
   </div>
 </div>`,
-      contributor: 'faishalmhmd',
-    }
+      contributor: "faishalmhmd",
+    },
   ],
 };
