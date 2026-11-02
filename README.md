@@ -73,6 +73,7 @@ UI components for building functional web applications:
 - [x] Skeletons
 - [x] Tables
 - [x] Tabs
+- [x] Timelines
 - [x] Toasts
 - [x] Toggles
 - [x] Tooltips
@@ -118,7 +119,6 @@ We are actively developing new components. Here is our prioritized list of upcom
 - [ ] Empty States
 - [ ] Data Grid
 - [ ] Lists
-- [ ] Timelines
 - [ ] Tree View
 
 ### 📣 Marketing UI
