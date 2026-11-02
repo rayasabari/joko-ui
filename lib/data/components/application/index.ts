@@ -33,6 +33,7 @@ import { tours } from './tours';
 import { timelines } from './timelines';
 import { sliders } from './sliders';
 import { file_uploads } from './file-uploads';
+import { tree_views } from './tree-views';
 
 export const applicationComponents: ComponentType[] = [
   navbars,
@@ -68,5 +69,6 @@ export const applicationComponents: ComponentType[] = [
   tours,
   timelines,
   sliders,
-  file_uploads
+  file_uploads,
+  tree_views
 ];
