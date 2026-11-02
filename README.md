@@ -79,6 +79,7 @@ UI components for building functional web applications:
 - [x] Toasts
 - [x] Toggles
 - [x] Tree Views
+- [x] Dividers
 - [x] Tooltips
 - [x] Tours
 
@@ -109,7 +110,6 @@ We are actively developing new components. Here is our prioritized list of upcom
 
 ### 📱 Application UI
 - [ ] Textareas
-- [ ] Dividers
 - [ ] Containers
 - [ ] Grid (Stack)
 - [ ] Headings
