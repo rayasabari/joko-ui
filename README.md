@@ -60,6 +60,7 @@ UI components for building functional web applications:
 - [x] Date Pickers
 - [x] Drawers
 - [x] Dropdowns
+- [x] File Uploads
 - [x] Forms
 - [x] Inputs
 - [x] Loaders
@@ -107,7 +108,6 @@ We are actively developing new components. Here is our prioritized list of upcom
 
 ### 📱 Application UI
 - [ ] Textareas
-- [ ] File Uploads
 - [ ] Dividers
 - [ ] Containers
 - [ ] Grid (Stack)

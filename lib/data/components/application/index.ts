@@ -32,6 +32,7 @@ import { notification } from "./notification";
 import { tours } from './tours';
 import { timelines } from './timelines';
 import { sliders } from './sliders';
+import { file_uploads } from './file-uploads';
 
 export const applicationComponents: ComponentType[] = [
   navbars,
@@ -66,5 +67,6 @@ export const applicationComponents: ComponentType[] = [
   notification,
   tours,
   timelines,
-  sliders
+  sliders,
+  file_uploads
 ];
