@@ -30,14 +30,19 @@ import { carousels } from "./carousels";
 import { command_palette } from "./command-palette";
 import { notification } from "./notification";
 import { tours } from './tours';
+import { timelines } from './timelines';
+import { sliders } from './sliders';
+import { file_uploads } from './file-uploads';
+import { tree_views } from './tree-views';
+import { dividers } from './dividers';
 
 export const applicationComponents: ComponentType[] = [
   navbars,
   sidebars,
-  dropdowns,
-  breadcrumbs,
-  avatars,
   forms,
+  breadcrumbs,
+  dropdowns,
+  avatars,
   buttons,
   cards,
   loaders,
@@ -62,5 +67,10 @@ export const applicationComponents: ComponentType[] = [
   carousels,
   command_palette,
   notification,
-  tours
+  tours,
+  timelines,
+  sliders,
+  file_uploads,
+  tree_views,
+  dividers
 ];

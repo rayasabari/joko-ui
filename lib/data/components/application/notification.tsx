@@ -15,15 +15,15 @@ export const notification: ComponentType = {
   <div class="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
     <h3 class="text-sm font-semibold text-zinc-900 dark:text-white">Notifications</h3>
 
-    <button class="text-xs font-medium text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300">Mark all as read</button>
+    <button class="text-xs font-medium text-lime-600 hover:text-lime-700 dark:text-lime-400 dark:hover:text-lime-300">Mark all as read</button>
   </div>
 
   <!-- Unread -->
-  <button class="flex w-full gap-3 border-b border-zinc-100 bg-green-50/50 p-4 text-left transition hover:bg-green-50 dark:border-zinc-900 dark:bg-green-950/20 dark:hover:bg-green-950/30">
+  <button class="flex w-full gap-3 border-b border-zinc-100 bg-lime-50/50 p-4 text-left transition hover:bg-lime-50 dark:border-zinc-900 dark:bg-lime-950/20 dark:hover:bg-lime-950/30">
     <div class="relative shrink-0">
-      <div class="flex size-9 items-center justify-center rounded-full bg-green-600 text-sm font-medium text-white dark:bg-green-500">J</div>
+      <div class="flex size-9 items-center justify-center rounded-full bg-lime-600 text-sm font-medium text-white dark:bg-lime-500">J</div>
 
-      <span class="absolute -right-0.5 -bottom-0.5 size-2.5 rounded-full border-2 border-white bg-green-500 dark:border-zinc-950"></span>
+      <span class="absolute -right-0.5 -bottom-0.5 size-2.5 rounded-full border-2 border-white bg-lime-500 dark:border-zinc-950"></span>
     </div>
 
     <div class="min-w-0 flex-1">
@@ -47,7 +47,7 @@ export const notification: ComponentType = {
     </div>
   </button>
 
-  <button class="w-full p-3 text-center text-sm font-medium text-zinc-600 transition hover:bg-zinc-50 hover:text-green-600 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:text-green-400">View all notifications</button>
+  <button class="w-full p-3 text-center text-sm font-medium text-zinc-600 transition hover:bg-zinc-50 hover:text-lime-600 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:text-lime-400">View all notifications</button>
 </div>`,
       contributor: "yuxxeun",
     },

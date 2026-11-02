@@ -34,6 +34,7 @@ export const tours: ComponentType = {
   </div>
 </div>
 <div class="h-40"></div>`,
+      contributor: 'raflyano-nur',
     },
     {
       id: 'tour-spotlight',
@@ -69,6 +70,7 @@ export const tours: ComponentType = {
   </div>
   <div class="h-32"></div>
 </div>`,
+      contributor: 'raflyano-nur',
     },
     {
       id: 'tour-welcome',
@@ -88,6 +90,7 @@ export const tours: ComponentType = {
     </div>
   </div>
 </div>`,
+      contributor: 'raflyano-nur',
     },
     {
       id: 'tour-progress-dots',
@@ -118,6 +121,7 @@ export const tours: ComponentType = {
     </div>
   </div>
 </div>`,
+      contributor: 'raflyano-nur',
     },
     {
       id: 'tour-checklist',
@@ -155,6 +159,7 @@ export const tours: ComponentType = {
     </ul>
   </div>
 </div>`,
+      contributor: 'raflyano-nur',
     },
   ],
 };
